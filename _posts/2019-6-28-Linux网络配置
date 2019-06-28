@@ -1,0 +1,5 @@
+## 查看网络接口信息  
+查看所有活动网络接口信息： ifconfig （ip address）  
+查看指定网络接口信息： ifconfig 网络接口名 （ifconfig eth0）
+查看主机名 ：hostname
+
