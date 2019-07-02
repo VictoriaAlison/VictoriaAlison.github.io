@@ -9,6 +9,6 @@ header-img: images/huanhuan.jpg
 #baseurl:""
 
 #Sidebar settings
-sidebar:true
-sidebar-about-description:"emmmmmmm"
-sidebar-avatar:/images/huanhuan.jpg
+#sidebar:true
+#sidebar-about-description:"emmmmmmm"
+#sidebar-avatar:/images/huanhuan.jpg
