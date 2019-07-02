@@ -5,8 +5,8 @@ header-img: images/huanhuan.jpg
 #email:13102722298@163.com
 #description:"headache"
 #keyword:"a,b,c,d,email"
-url:"https://victoriaalison.github.io/"
-baseurl:""
+#url:"https://victoriaalison.github.io/"
+#baseurl:""
 
 #Sidebar settings
 sidebar:true
