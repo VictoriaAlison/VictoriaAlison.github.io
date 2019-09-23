@@ -19,9 +19,9 @@
     
 Begin 1(Terminal):  
 1.install  
-2.#systemctl start sshd;systemctl enable sshd(Beacuse I am using root permission, so it's #)  
-3.#systemctl status sshd  
-4.#vim /etc/sysconfig/selinux (里面非注释有两行，selinux和selinuxtype。他们各有三种取值。如果SELINUX=enforcing，则要执行下面几步。)（#getenforce可获取当前工作方式，#setenforce可以修改。enforcing和permissive可以在不重启的模式下切换，与disabled切换需要重启#reboot）  
+2.# systemctl start sshd;systemctl enable sshd(Beacuse I am using root permission, so it's #)  
+3.# systemctl status sshd  
+4.# vim /etc/sysconfig/selinux (里面非注释有两行，selinux和selinuxtype。他们各有三种取值。如果SELINUX=enforcing，则要执行下面几步。)（#getenforce可获取当前工作方式，#setenforce可以修改。enforcing和permissive可以在不重启的模式下切换，与disabled切换需要重启#reboot）  
 5.（更改完成后，找主配置文件）#vim /etc/ssh/sshd_config(想连别人的时候，改ssh_config;别人连我的时候，改sshd_config)  
     （改文件时，当改注释时，先复制要改的内容，Port 22 改为 Port 23456，数字随便）  
 6.因为更改了端口，所以先过滤一下 netstat -lntup | grep ：23456 如果无人监听，可以使用这个端口  
